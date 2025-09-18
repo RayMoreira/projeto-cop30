@@ -1,0 +1,15 @@
+{
+  "threshold": 0.5,
+  "last_review": "2025-09-15",
+  "next_review": "2025-11-01",
+  "criteria": {
+    "max_fp_rate": 0.10,
+    "max_fn_rate": 0.05,
+    "data_drift_check": true
+  },
+  "responsibles": [
+    "Sustentabilidade",
+    "Governança de Dados",
+    "Ciência de Dados"
+  ]
+}
