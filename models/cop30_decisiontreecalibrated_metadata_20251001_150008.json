@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-10-01 15:00:08",
+  "model_name": "DecisionTreeCalibrated",
+  "selected_via": "min expected cost (OOF) with cost_policy FP=2, FN=5",
+  "best_grid": "DecisionTree",
+  "best_params": {
+    "clf__class_weight": null,
+    "clf__max_depth": null,
+    "clf__min_samples_leaf": 1,
+    "clf__min_samples_split": 2
+  },
+  "f1_cv_mean": 0.999922,
+  "decision_threshold": 1e-09,
+  "decision_threshold_sci": "1.000e-09",
+  "cost_policy": {
+    "FP": 2,
+    "FN": 5
+  },
+  "python": "3.11.11",
+  "os": "Darwin 24.6.0",
+  "sklearn": "1.2.1",
+  "features": [
+    "desmatamento_pct",
+    "poluicao_mgL",
+    "dist_area_protegida_km",
+    "emissao_co2_ton"
+  ],
+  "target": "risco_socioambiental",
+  "n_samples": 10035,
+  "class_distribution": {
+    "1": 9199,
+    "0": 836
+  },
+  "pipeline_steps": [
+    "prep",
+    "clf"
+  ],
+  "calibration": {
+    "enabled": true,
+    "method": "isotonic",
+    "cv": 5
+  }
+}
